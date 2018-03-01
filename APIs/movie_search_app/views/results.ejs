@@ -1,0 +1,10 @@
+<h1>Results Page!</h1>
+  <% if (data.Response === "True") { %>
+    <% data.Search.forEach(function(movie) { %>
+      <li><%= movie.Title %></li>
+    <% }) %>
+  <% } else { %>
+    <h2><em><%= data.Error %></em></h2> 
+  <% }  %>
+  
+<a href="/">New Search</a>
